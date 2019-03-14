@@ -1,0 +1,7 @@
+.DS_Store
+.Rproj.user/
+.idea/
+cmake*/
+RandomNumberGenerators.Rproj
+figures/prng_perf*.html
+figures/prng_perf*/
