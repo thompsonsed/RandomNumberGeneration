@@ -76,7 +76,6 @@ public:
 
     }
 
-
     uint64_t next()
     {
         static unsigned long mag01[2] = {0x0UL, MATRIX_A};
@@ -84,10 +83,7 @@ public:
         unsigned long long x;
 
         if(mti_ >= N)
-        { /* generate NN words at one time */
-
-            /* if init_genrand64() has not been called, */
-            /* a default initial seed is used     */
+        {
             if(mti_ == N + 1)
                 init(5489ULL);
 

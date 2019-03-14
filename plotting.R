@@ -28,7 +28,7 @@ p2 <- perf %>% ggplot() +
   geom_bar(aes(x=PRNG, y=Time, fill=PRNG), stat = "identity") + 
   theme_classic() + coord_flip() + 
   scale_fill_viridis("", end=0.95, option="plasma", breaks=rev(perf$PRNG), discrete=TRUE) +
-  scale_y_continuous("Time taken (s) % (lower is better)") + 
+  scale_y_continuous("Time taken (s) (lower is better)") + 
   theme(legend.position = "none")
 
 gga <- ggarrange(p1, p2)
