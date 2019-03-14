@@ -5,3 +5,7 @@ cmake*/
 RandomNumberGenerators.Rproj
 figures/prng_perf*.html
 figures/prng_perf*/
+CMakeCache.txt
+Makefile
+cmake_install.cmake
+rng_testing

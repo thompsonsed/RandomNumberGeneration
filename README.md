@@ -1,6 +1,7 @@
-### Testing random number generation in C++
+# Testing random number generation in C++
 
-Tests the performance of several PRNGs, including
+
+See the [blog post](http://thompsonsed.co.uk/?p=1337)  accompanying this code. Tests the performance of several PRNGs, including
 
 - Xoshiro256+
 - Xoroshiro128+
@@ -12,4 +13,18 @@ Tests the performance of several PRNGs, including
 - C++ base `rand()`
 - C++ base `mt`
 
-[See the blog post accompanying this code](http://thompsonsed.co.uk/?p=1337)
+
+
+## Installation and usage
+Use the included cmake file to compile.
+
+```
+>> cmake .
+>> make
+>> ./rng_testing
+```
+
+## Contact
+Email: thompsonsed@gmail.com
+
+License: MIT
