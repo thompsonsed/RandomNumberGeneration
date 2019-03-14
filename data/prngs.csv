@@ -2,7 +2,7 @@
 Xoshiro256+,1.279
 Xoroshiro128+,1.643
 SplitMix64,1.38
-LNG,1.673
+LCG,1.673
 PCG,1.936
 MT,4.522
 Base rand,6.519

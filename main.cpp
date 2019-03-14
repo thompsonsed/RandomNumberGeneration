@@ -2,7 +2,7 @@
 #include <numeric>
 #include <iomanip>
 #include "Xoshiro256plus.h"
-#include "LNG.h"
+#include "LCG.h"
 #include "MersenneTwisterCpp.h"
 #include "Xoroshiro128plus.h"
 #include "MersenneTwister.h"
@@ -26,7 +26,7 @@ int main()
     unsigned long long tot9 = 0;
     Xoshiro256plus rand1(1);
     SplitMix64 rand2(1);
-    LNG rand3(1);
+    LCG rand3(1);
     MersenneTwisterCpp rand4(1);
     Xoroshiro128plus rand5(1);
     MersenneTwister rand6(1);
@@ -93,7 +93,7 @@ int main()
     std::cout << "Xoshiro256+\t" << double(end1 - start1) / CLOCKS_PER_SEC << "\t\t" << tot1 << std::endl;
     std::cout << "Xoroshiro128+\t" << double(end5 - start5) / CLOCKS_PER_SEC << "\t\t" << tot5 << std::endl;
     std::cout << "SplitMix64\t\t" << double(end2 - start2) / CLOCKS_PER_SEC << "\t\t" << tot2 << std::endl;
-    std::cout << "LNG\t\t\t\t" << double(end3 - start3) / CLOCKS_PER_SEC << "\t\t" << tot3 << std::endl;
+    std::cout << "LCG\t\t\t\t" << double(end3 - start3) / CLOCKS_PER_SEC << "\t\t" << tot3 << std::endl;
     std::cout << "PCG\t\t\t\t" << double(end9 - start9) / CLOCKS_PER_SEC << "\t\t" << tot9 << std::endl;
     std::cout << "MT\t\t\t\t" << double(end6 - start6) / CLOCKS_PER_SEC << "\t\t" << tot6 << std::endl;
     std::cout << "Base rand\t\t" << double(end7 - start7) / CLOCKS_PER_SEC << "\t\t" << tot7 << std::endl;

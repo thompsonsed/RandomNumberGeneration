@@ -14,12 +14,12 @@ const uint64_t modulus = static_cast<unsigned long>(pow(2, 62)-1);
 const uint64_t multiplier = 1664525;
 const uint64_t increment = 1013904223;
 
-class LNG
+class LCG
 {
 private:
     unsigned long x;
 public:
-    explicit LNG(unsigned long seed) : x(seed)
+    explicit LCG(unsigned long seed) : x(seed)
     {
 
     }
